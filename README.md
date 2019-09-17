@@ -42,7 +42,7 @@ Having an active and healthy commit history on GitHub is important for your futu
 * Please submit the link to the Github Repository!
 
 ## Instructions
-
+  
 ### Challenge #1: Customer View (Minimum Requirement)
 
 1. Create a MySQL Database called `bamazon`.
