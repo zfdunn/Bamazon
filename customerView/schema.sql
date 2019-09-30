@@ -7,9 +7,9 @@ CREATE TABLE products (
     item_id INT NOT NULL AUTO_INCREMENT,
     product_name VARCHAR(250) NULL,
     department_name VARCHAR(250) NULL,
-    price DECIMAL (10, 2),
-    stock_quantity INT NULL,
-    -- PRIMARY KEY (item_id)
+    price DECIMAL (10, 2) NOT NULL,
+    stock_quantity INT(10) NOT NULL,
+    primary KEY (item_id)
 );
 
 INSERT INTO products(product_name, department_name, price, stock_quantity)
@@ -51,4 +51,4 @@ VALUES ("Intel Core i9-9900 Desktop Processor 8 Cores up to 5.0 GHz Turbo unlock
 INSERT INTO products(product_name, department_name, price, stock_quantity)
 VALUES ("2019 Lenovo ThinkPad Yoga 11e 11.6 inches Anti-Glare HD Touchscreen 2-in-1 Business Laptop - Intel Core i3-7100U, 128GB M.2 SSD, 8GB RAM, Windows 10 Pro", "Computers", 428.98, 1400);
 
-ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'enter password here';
+-- ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'enter password here';
